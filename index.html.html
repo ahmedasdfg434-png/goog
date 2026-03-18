@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نظام تغيير كلمة المرور - تجريبي</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            width: 100%;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        
+        h1 {
+            color: #1e293b;
+            margin-bottom: 20px;
+            font-size: 32px;
+            text-align: center;
+        }
+        
+        .subtitle {
+            color: #64748b;
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 18px;
+        }
+        
+        .links {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+        
+        .link-card {
+            background: #f8fafc;
+            border: 2px solid #e2e8f0;
+            border-radius: 15px;
+            padding: 25px;
+            text-decoration: none;
+            transition: all 0.3s;
+            display: block;
+        }
+        
+        .link-card:hover {
+            transform: translateY(-5px);
+            border-color: #667eea;
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.2);
+        }
+        
+        .link-icon {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+        
+        .link-title {
+            color: #1e293b;
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .link-desc {
+            color: #64748b;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+        
+        .info-box {
+            background: #f1f5f9;
+            border-radius: 15px;
+            padding: 25px;
+            margin-top: 30px;
+        }
+        
+        .info-title {
+            color: #1e293b;
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .info-item {
+            color: #475569;
+            margin-bottom: 10px;
+            padding-right: 20px;
+            border-right: 3px solid #667eea;
+        }
+        
+        .badge {
+            background: #667eea;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 12px;
+            display: inline-block;
+            margin-left: 10px;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #cbd5e1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>🔐 نظام تغيير كلمة المرور</h1>
+            <div class="subtitle">نسخة تجريبية - للتعلم والاختبار فقط</div>
+            
+            <div class="links">
+                <a href="google-password-change2.html" class="link-card">
+                    <div class="link-icon">📝</div>
+                    <div class="link-title">صفحة تغيير كلمة المرور</div>
+                    <div class="link-desc">الصفحة التي يراها المستخدمون - تصميم يشبه Google</div>
+                </a>
+                
+                <a href="admin.html" class="link-card">
+                    <div class="link-icon">⚡</div>
+                    <div class="link-title">لوحة تحكم الأدمن</div>
+                    <div class="link-desc">لوحة سرية لعرض البيانات المدخلة - محمية بكلمة مرور</div>
+                </a>
+            </div>
+            
+            <div class="info-box">
+                <div class="info-title">
+                    <span>ℹ️</span>
+                    <span>معلومات النظام</span>
+                </div>
+                
+                <div class="info-item">
+                    <strong>📁 الصفحات:</strong> ملفان مستقلان تماماً
+                </div>
+                <div class="info-item">
+                    <strong>🔑 كلمة سر الأدمن:</strong> <code>admin@123</code>
+                </div>
+                <div class="info-item">
+                    <strong>💾 التخزين:</strong> localStorage في المتصفح
+                </div>
+                <div class="info-item">
+                    <strong>📊 البيانات:</strong> تخزن محلياً ولا ترسل لأي خادم
+                </div>
+                <div class="info-item">
+                    <strong>⚠️ تنبيه:</strong> هذا المشروع للتعلم فقط
+                </div>
+            </div>
+            
+            <div class="footer">
+                <p>جميع الملفات جاهزة للرفع على GitHub Pages</p>
+                <p style="margin-top: 10px; font-size: 12px;">© 2024 - مشروع تجريبي</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
